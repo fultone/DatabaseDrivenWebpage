@@ -1,0 +1,202 @@
+/*
+    main.css
+    Web Project Pair E - October 2017
+
+    The following CSS is organized based on which section of the website
+    it corresponds to.
+*/
+
+/*
+    Universal across site
+*/
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #eef3f4;
+}
+
+section {
+    float: left;
+    margin: 0;
+    width: 80%;
+}
+
+footer {
+    margin-top: 80%;
+    float: bottom;
+    font-size: 12px;
+}
+
+/*
+    Right Sidebar
+*/
+aside {
+    float: right;
+    margin: 0;
+    width: 20%;
+    font-weight: bold;  
+}
+
+figcaption {
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+    margin-right: 9%;
+    margin-left: 9%;
+    text-align: center;
+    font-size: 14px;
+}
+
+#stargazing {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+    border-radius: 5px;
+}
+
+#ufoshirt {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+    border-radius: 5px;
+}
+
+/*
+    Top Navigation
+*/
+#siteid {
+    height: 80px;
+    width: auto;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #54d062;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    background-color: #eef3f4;
+    color: #54d062;
+    font-weight: bolder;
+}
+
+.topnav a.active {
+    color: white;
+}
+
+/*
+    Homepage - index.html
+*/
+h1.homepageTitle {
+    text-align: center;
+}
+
+#sightingOfTheWeek {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 8px;
+}
+
+/*
+    Search Sightings - sightings.html
+*/
+#promptSearch {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+form {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#searchBox {
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+}
+
+#searchFilters {
+    height: 31px;
+    width: 100px;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#submit {
+    height: 30px;
+    width: 100px;
+    font-size: 16px;
+    color: black;
+    background-color: #a0a0a0;
+    border-radius: 5px;
+    border: none;
+}
+
+/*
+    Results - result.html
+*/
+.sighting {
+    font-size: 13px;
+}
+
+#sightingsTable td{
+    font-size: 15px;
+}
+
+#sightingsTable tr{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+#sightingsTable tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/*
+    Shop - shop.html
+*/
+#shopTable td {
+    width: 300px;
+}
+
+#poster, #shirt, #pin {
+    width: 100%;
+}
+
+/*
+    Contact Us - contact.html
+*/
+#alienDanielleEmilee {
+    width: 70%;
+    height: 70%;
+    display: block;
+    border-radius: 10px;
+}
+
+#contactTable tr {
+    text-align: center;
+}
+
+#contactTable td {
+    width: 160px;
+}

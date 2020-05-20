@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}" />
+        <title>UFO Sightings Database - Shop</title>
+    </head>
+    <body>
+        <header>
+            <a href="../home"><img id="siteid" src="../static/alien.png"></a>
+
+            <div class="topnav" id="myTopnav">
+                <a href="../home">Home</a>
+                <a href="../sightings">Search Sightings</a>
+                <a href="../shop" class="active">Shop</a>
+                <a href="../contact">Contact Us</a>
+            </div>
+            
+        </header>
+        
+        <section>
+            <table id="shopTable">
+                <tr>
+                    <td>
+                        <figure>
+                            <img id="poster" src="../static/poster.jpg" alt="Alien and UFO flying above forest">
+                            <figcaption><h3>Alien Poster - $10.00</h3><p>This majestic scene of an alien head and UFO flying above a forest in the nighttime makes a great accent piece for any space.</p></figcaption>
+                        </figure>
+                    </td>
+                    <td>
+                        <figure>
+                            <img id="shirt" src="../static/shirt.png" alt="Black t-shirt with alien and ufo">
+                            <figcaption><h3>Black Alien Peace T-Shirt - $20.00</h3><p>This cotton black t-shirt is an essential addition to any extraterrestrial enthusiast's wardrobe.</p></figcaption>
+                        </figure>
+                    </td>
+                    <td>
+                        <figure>
+                            <img id="pin" src="../static/pin.jpg" alt="Pin with caption 'Just visiting this planet'">
+                            <figcaption><h3>Alien Pin - $3.00</h3><p>This witty pin makes anything it's pinned to out of this world!</p></figcaption>
+                        </figure>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+        <aside>
+            <figure>
+                <a href="../contact"><figcaption>Contact Us</figcaption></a>
+                <img id="stargazing" src="../static/stargazing.jpg" alt="People stargazing">
+            </figure>
+        </aside>
+        
+        <footer>
+            <p>
+                UFO Sightings Database created by Danielle Eisen and Emilee Fulton.
+            </p>
+            <p>
+                All data was gathered from the <a href="http://www.nuforc.org/">National UFO Reporting Center</a>. Permission to use this database is given via the National UFO Reporting Center's <a href="http://www.nuforc.org/General.html">Information and Policies page</a>.
+            </p>
+            <p>
+                All images on this webpage were labeled for reuse by the owner. The site ID image was modified from its original form <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Alien01.svg/2000px-Alien01.svg.png">here</a>. The image of people stargazing can be found <a href="https://upload.wikimedia.org/wikipedia/commons/2/22/Astronomy_Amateur_3_V2.jpg">here</a>. The alien shirt was found <a href="http://www.glow.co.uk/media/catalog/product/cache/1/image/416x/0f396e8a55728e79b48334e699243c07/g/l/glow-tshirt-1600-alien.jpg">here</a>. The image of the alien poster was found <a href="https://pixabay.com/p-609607/?no_redirect">here</a>. The "Just Visiting This Planet" pin was found <a href="https://c1.staticflickr.com/3/2349/3541741424_5953c5d047_b.jpg">here</a>.
+            </p>
+        </footer>
+
+    </body>
+</html>

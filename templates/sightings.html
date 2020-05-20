@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}" />
+        <title>UFO Sightings Database</title>
+    </head>
+    <body>
+        <header>
+            <a href="../home"><img id="siteid" src="../static/alien.png"></a>
+            
+            <div class="topnav" id="myTopnav">
+                <a href="../home">Home</a>
+                <a href="../sightings" class="active">Search Sightings</a>
+                <a href="../shop">Shop</a>
+                <a href="../contact">Contact Us</a>
+            </div>
+            
+        </header>
+        
+        <form action="http://perlman.mathcs.carleton.edu:5210/result" method="POST">
+            <span id="promptSearch">Search: </span>
+            <input id="searchBox" type="text" name = "searchBox">
+            <select id="searchFilters" name="searchFilters">
+                <option value="keyword">Keyword</option>
+                <option value="datesighted">Date</option>
+                <option value="city">City</option>
+                <option value="statesighted">State</option>
+                <option value="shape">Shape</option>
+            </select>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        
+        <footer>
+            <p>
+                UFO Sightings Database created by Danielle Eisen and Emilee Fulton.
+            </p>
+            <p>
+                All data was gathered from the <a href="http://www.nuforc.org/">National UFO Reporting Center</a>. Permission to use this database is given via the National UFO Reporting Center's <a href="http://www.nuforc.org/General.html">Information and Policies page</a>.
+            </p>
+            <p>
+                All images on this webpage were labeled for reuse by the owner. The site ID image was modified from its original form <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Alien01.svg/2000px-Alien01.svg.png">here</a>.
+            </p>
+        </footer>
+
+    </body>
+</html>

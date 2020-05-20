@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}" />
+        <title>UFO Sightings Database - Home</title>
+    </head>
+    <body>
+        <header>
+            <a href="../home"><img id="siteid" src="../static/alien.png"></a>
+            
+            <div class="topnav" id="myTopnav">
+                <a href="../home" class="active">Home</a>
+                <a href="../sightings">Search Sightings</a>
+                <a href="../shop">Shop</a>
+                <a href="../contact">Contact Us</a>
+            </div>
+            
+        </header>
+        
+        <section>
+            <h1 class="homepageTitle">UFO Sighting of the Week</h1>
+            <figure><img id="sightingOfTheWeek" src="../static/sightingOfTheWeek.jpg" alt="UFO over city">
+                <figcaption><h3>A light was seen traveling across the sky in Houston, TX </h3>A source tells us: "I saw a white light in the sky, it almost looked like a star but was too close to be one. I kept staring at it, and it shot a green light orb towards Earth. The white light was so close I captured a picture..." </figcaption></figure>
+        </section>
+        
+        <aside>
+            <figure>
+                <a href="../contact"><figcaption>Contact Us</figcaption></a>
+                <img id="stargazing" src="../static/stargazing.jpg" alt="People stargazing">
+            </figure>
+            <figure>
+                <a href="../shop"><figcaption>Purchase UFO Gear</figcaption></a>
+                <img id="ufoshirt" src="../static/shirt.png" alt="Black t-shirt with alien and ufo">
+            </figure>
+        </aside>
+        
+        <footer>
+            <p>
+                UFO Sightings Database created by Danielle Eisen and Emilee Fulton.
+            </p>
+            <p>
+                All data was gathered from the <a href="http://www.nuforc.org/">National UFO Reporting Center</a>. Permission to use this database is given via the National UFO Reporting Center's <a href="http://www.nuforc.org/General.html">Information and Policies page</a>.
+            </p>
+            <p>
+                All images on this webpage were labeled for reuse by the owner. The site ID image was modified from its original form <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Alien01.svg/2000px-Alien01.svg.png">here</a>. The UFO of the week image sighting is from <a href="https://c2.staticflickr.com/6/5594/14524680049_a7e1b754c4_b.jpg">here</a>. The image of people stargazing can be found <a href="https://upload.wikimedia.org/wikipedia/commons/2/22/Astronomy_Amateur_3_V2.jpg">here</a>. The alien shirt was found <a href="http://www.glow.co.uk/media/catalog/product/cache/1/image/416x/0f396e8a55728e79b48334e699243c07/g/l/glow-tshirt-1600-alien.jpg">here</a>.
+            </p>
+        </footer>
+
+    </body>
+</html>

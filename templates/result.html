@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}" />
+        <title>UFO Sightings Database</title>
+    </head>
+    <body>
+        <header>
+            <a href="../home"><img id="siteid" src="../static/alien.png"></a>
+            
+            <div class="topnav" id="myTopnav">
+                <a href="../home">Home</a>
+                <a href="../sightings" class="active">Search Sightings</a>
+                <a href="../shop">Shop</a>
+                <a href="../contact">Contact Us</a>
+            </div>
+            
+        </header>
+        
+        <a href="../sightings">New Search</a>
+
+        <table id="sightingsTable">
+            <tr>
+                <th>Date Sighted</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Duration of Sighting</th>
+                <th>Shape</th>
+                <th>Description</th>
+            </tr>
+            {% for value in result %}
+            <tr>
+                {% for column in value %}
+                <td>{{ column }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+        
+        <footer>
+            <p>
+                UFO Sightings Database created by Danielle Eisen and Emilee Fulton.
+            </p>
+            <p>
+                All data was gathered from the <a href="http://www.nuforc.org/">National UFO Reporting Center</a>. Permission to use this database is given via the National UFO Reporting Center's <a href="http://www.nuforc.org/General.html">Information and Policies page</a>.
+            </p>
+            <p>
+                All images on this webpage were labeled for reuse by the owner. The site ID image was modified from its original form <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Alien01.svg/2000px-Alien01.svg.png">here</a>.
+            </p>
+            <p>
+                The data represented above is unedited from the original submissions of the UFO observers.
+            </p>
+        </footer>
+
+    </body>
+</html>
